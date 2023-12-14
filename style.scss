@@ -1,0 +1,117 @@
+@keyframes myAnim {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        transform: scale(1);
+    }
+
+    100% {
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+        transform: scale(1.1);
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+
+}
+
+.top {
+    height: 1024px;
+    background: #000915;
+    background-image: url(./img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #FFF;
+
+    &_header {
+        display: flex;
+        flex-direction: column;
+        margin-top: 218px;
+    }
+
+    &_title {
+        font-size: 64px;
+        font-weight: 700;
+        padding-bottom: 32px;
+    }
+
+    &_text {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 32px;
+        padding-bottom: 44px;
+
+        &__bold {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 32px;
+        }
+    }
+
+    &_button {
+        border-radius: 30px;
+        background: #9C0332;
+        width: 234px;
+        height: 48px;
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 622px;
+
+        &:hover {
+            transform: scale(1.05);
+            transition: all 0.3s;
+            box-shadow: 0 0 10px #888;
+            animation: myAnim 0.5s ease 0s 1 alternate-reverse both;
+        }
+    }
+}
+
+.games {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+    padding-bottom: 128px;
+}
+
+.game {
+    &_box {
+        position: relative;
+
+        &:hover {
+            transform: scale(1.05);
+            transition: all 0.3s;
+            box-shadow: 0 0 10px #888;
+            box-sizing: border-box;
+            border-radius: 17px;
+        }
+    }
+
+    &_picture {
+        width: 100%;
+        border-radius: 17px;
+    }
+
+    &_text {
+        position: absolute;
+        bottom: 32px;
+        left: 32px;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+    }
+}
