@@ -1,3 +1,2 @@
-let a;
-a = 10;
+let a = '10';
 alert(a);
