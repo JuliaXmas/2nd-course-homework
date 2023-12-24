@@ -10,7 +10,6 @@
     }
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -70,6 +69,7 @@ body {
         font-size: 18px;
         font-weight: 400;
         margin-bottom: 622px;
+        cursor: pointer;
 
         &:hover {
             transform: scale(1.05);
@@ -84,6 +84,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 32px;
     padding-bottom: 128px;
 }
@@ -91,6 +92,7 @@ body {
 .game {
     &_box {
         position: relative;
+        cursor: pointer;
 
         &:hover {
             transform: scale(1.05);
@@ -113,6 +115,21 @@ body {
         font-size: 24px;
         font-weight: 600;
         line-height: 32px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 786px/2);
+        padding-right: calc(50% - 786px/2);
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 833px) {
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;
     }
 }
 

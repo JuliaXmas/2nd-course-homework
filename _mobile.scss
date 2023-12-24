@@ -1,15 +1,36 @@
-@media (max-width: 425px) {
+@media (max-width: 767px) {
     .center {
         padding-left: 16px;
         padding-right: 16px;
     }
-}
 
-.top {
-    &_title {
-        color: #FFF;
-        text-align: center;
-        font-size: 32px;
-        font-weight: 700;
+    .top {
+        &_title {
+            color: #FFF;
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        &_text {
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 32px;
+            padding-bottom: 44px;
+            text-align: center;
+
+            &__bold {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 32px;
+            }
+        }
+
+        &_header {
+            display: flex;
+            flex-direction: column;
+            margin-top: 218px;
+            align-items: center;
+        }
     }
 }
