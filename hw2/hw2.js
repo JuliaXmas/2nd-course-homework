@@ -33,3 +33,11 @@ if (d > 100 || e > 100) {
     alert('Неверно');
 }
 
+//Задание 4
+let a = '2';
+let b = '3';
+alert(Number(a) + Number(b));
+
+//Задание 5
+ let month = prompt('Введите название месяца');
+ 
