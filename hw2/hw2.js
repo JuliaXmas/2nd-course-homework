@@ -12,5 +12,15 @@ else {
 
 alert(message);
 
+//Задание 2
+let c = Number(prompt('Введите любое число'));
 
+if (c > 0 && c < 10) {
+    alert('Верно');
+}
+else {
+    alert('Неверно');
+}
+
+// Здание 3
 
