@@ -1,4 +1,5 @@
 //Задание 1
+//just to get the GitHub
 let passwordRequest = prompt('Введите пароль');
 
 let message;
