@@ -1,0 +1,15 @@
+@media (max-width: 425px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.top {
+    &_title {
+        color: #FFF;
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
+    }
+}
