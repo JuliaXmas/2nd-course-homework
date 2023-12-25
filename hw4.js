@@ -27,3 +27,15 @@ while (b <= 22) {
 for (z = 7; z <= 22; z++) {
     console.log(z);
 }
+
+
+//Задание 4
+const peopleSalary = {
+    'Коля': '200$',
+    'Вася': '300$',
+    'Петя': '400$',
+
+};
+for (let human in peopleSalary) {
+    console.log(`${human} — зарплата ${peopleSalary[human]}`);
+}
