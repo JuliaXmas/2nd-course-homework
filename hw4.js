@@ -23,7 +23,6 @@ while (b <= 22) {
 }
 
 // или
-
 for (z = 7; z <= 22; z++) {
     console.log(z);
 }
@@ -39,3 +38,13 @@ const peopleSalary = {
 for (let human in peopleSalary) {
     console.log(`${human} — зарплата ${peopleSalary[human]}`);
 }
+
+//Задание 5
+let n = 1000;
+let num = 0;
+
+while (n > 50) {
+    n = n / 2;
+    num++;
+}
+console.log(`Получилось число ${n}. Число итераций равно ${num}`);
