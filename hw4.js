@@ -22,3 +22,8 @@ while (b <= 22) {
     b++;
 }
 
+// или
+
+for (z = 7; z <= 22; z++) {
+    console.log(z);
+}
