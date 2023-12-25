@@ -14,3 +14,11 @@ while (a <= 25) {
     a++;
 }
 
+//Задание 3
+let b = 7;
+
+while (b <= 22) {
+    console.log(b);
+    b++;
+}
+
