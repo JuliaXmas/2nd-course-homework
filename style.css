@@ -121,6 +121,9 @@ body {
     padding-left: 16px;
     padding-right: 16px;
   }
+  .top {
+    height: 735px;
+  }
   .top_title {
     color: #FFF;
     text-align: center;
@@ -144,5 +147,8 @@ body {
     flex-direction: column;
     margin-top: 218px;
     align-items: center;
+  }
+  .top_button {
+    margin-bottom: 367px;
   }
 }/*# sourceMappingURL=style.css.map */
