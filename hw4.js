@@ -48,3 +48,10 @@ while (n > 50) {
     num++;
 }
 console.log(`Получилось число ${n}. Число итераций равно ${num}`);
+
+//Задание 6
+for (let dayNumber = 5; dayNumber <= 31; dayNumber++) {
+    if (dayNumber % 7 == 0) {
+        console.log(`"Сегодня пятница" ${dayNumber} "число. Не забудь подготовить отчёт ;)"`);
+    }
+}
