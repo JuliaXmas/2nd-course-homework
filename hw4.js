@@ -4,5 +4,13 @@ let i = 0;
 while (i < 2) {
     console.log('Привет!');
     i++;
-    alert('Привет!')
 }
+
+//Задание 2
+let a = 1;
+
+while (a <= 25) {
+    console.log(a);
+    a++;
+}
+
