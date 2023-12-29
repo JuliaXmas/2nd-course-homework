@@ -27,7 +27,7 @@ console.log(even_or_odd(6));
 function func(n) {
     console.log(n * n);
 }
-func(2);
+func(8);
 
 //3.2
 numberSquare(function (num) {
@@ -35,21 +35,25 @@ numberSquare(function (num) {
 });
 
 function numberSquare(func) {
-    console.log(func(3));
+    console.log(func(10));
 }
 
 //Задание 4
-function greeting() {
-    let age = Number(prompt("Сколько Вам лет?"));
-    if (age < 0) {
-        console.log("Вы ввели неверное значение");
-    } else if (age >= 0 && age <= 12) {
-        console.log("Привет, друг!");
-    } else {
-        console.log("Добро пожаловать!")
-    }
-}
+"use strict";
+let age = Number(prompt("Сколько Вам лет?"));
+let printMessage;
 
+if (age < 0) {
+    printMessage = function () {
+        console.log("Вы ввели неверное значение");
+    }
+} else if (age >= 0 && age <= 12) {
+    printMessage = function () {
+        console.log("Привет, друг!");
+    }
+} else {
+    console.log("Добро пожаловать!")
+}
 
 
 
