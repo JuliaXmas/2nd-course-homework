@@ -55,5 +55,17 @@ if (age < 0) {
     console.log("Добро пожаловать!")
 }
 
+//Задание 5
+let a = prompt(`Введите первое число`);
+let b = prompt(`Введите второе число`);
+function exampl(a, b) {
+    if (isNaN(a) || isNaN(b)) {
+        return 'Одно или оба значения не являются числом';
+    } else {
+        return a * b;
+    }
+}
+console.log(exampl(a, b));
+
 
 
