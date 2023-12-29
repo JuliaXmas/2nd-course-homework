@@ -39,6 +39,17 @@ function numberSquare(func) {
 }
 
 //Задание 4
+function greeting() {
+    let age = Number(prompt("Сколько Вам лет?"));
+    if (age < 0) {
+        console.log("Вы ввели неверное значение");
+    } else if (age >= 0 && age <= 12) {
+        console.log("Привет, друг!");
+    } else {
+        console.log("Добро пожаловать!")
+    }
+}
+
 
 
 
