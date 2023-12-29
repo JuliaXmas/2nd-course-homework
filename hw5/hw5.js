@@ -23,10 +23,22 @@ console.log(even_or_odd(5));
 console.log(even_or_odd(6));
 
 // Задание 3
-let square = n => n * n;
+//3.1
+function func(n) {
+    console.log(n * n);
+}
+func(2);
 
-let x = square(7);
+//3.2
+numberSquare(function (num) {
+    return num * num;
+});
 
-console.log(x);
+function numberSquare(func) {
+    console.log(func(3));
+}
+
+//Задание 4
+
 
 
