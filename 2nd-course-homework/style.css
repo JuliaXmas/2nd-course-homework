@@ -70,6 +70,52 @@ body {
   box-shadow: 0 0 10px #888;
   animation: myAnim 0.5s ease 0s 1 alternate-reverse both;
 }
+.top_seasons {
+  height: 800px;
+  background: #000915;
+  color: #FFF;
+  display: flex;
+  -moz-column-gap: 135px;
+       column-gap: 135px;
+  flex-wrap: wrap;
+}
+.top_seasons__header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 218px;
+}
+.top_seasons__title {
+  font-size: 64px;
+  font-weight: 700;
+  padding-bottom: 32px;
+}
+.top_seasons__text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  padding-bottom: 44px;
+}
+.top_seasons__button {
+  border-radius: 30px;
+  background: #9C0332;
+  width: 234px;
+  height: 48px;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 622px;
+  cursor: pointer;
+}
+.top_seasons__button:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
+  box-shadow: 0 0 10px #888;
+  animation: myAnim 0.5s ease 0s 1 alternate-reverse both;
+}
+.top_seasons__picture {
+  width: 485px;
+  height: 333px;
+}
 
 .games {
   display: flex;
@@ -150,5 +196,55 @@ body {
   }
   .top_button {
     margin-bottom: 367px;
+  }
+  .top_seasons {
+    height: 654px;
+    background: #000915;
+    color: #FFF;
+    display: flex;
+    -moz-column-gap: 135px;
+         column-gap: 135px;
+  }
+  .top_seasons__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top_seasons__header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 178px;
+  }
+  .top_seasons__title {
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 32px;
+  }
+  .top_seasons__text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding-bottom: 32px;
+  }
+  .top_seasons__button {
+    border-radius: 30px;
+    background: #9C0332;
+    width: 234px;
+    height: 48px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 64px;
+    cursor: pointer;
+  }
+  .top_seasons__button:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+    box-shadow: 0 0 10px #888;
+    animation: myAnim 0.5s ease 0s 1 alternate-reverse both;
+  }
+  .top_seasons__picture {
+    width: 300px;
+    height: 190px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -38,5 +38,62 @@
         &_button {
             margin-bottom: 367px;
         }
+
+        &_seasons {
+            height: 654px;
+            background: #000915;
+            color: #FFF;
+            display: flex;
+            column-gap: 135px;
+
+            &__box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &__header {
+                display: flex;
+                flex-direction: column;
+                margin-top: 178px;
+            }
+
+            &__title {
+                font-size: 32px;
+                font-weight: 700;
+                padding-bottom: 32px;
+            }
+
+            &__text {
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 22px;
+                padding-bottom: 32px;
+            }
+
+            &__button {
+                border-radius: 30px;
+                background: #9C0332;
+                width: 234px;
+                height: 48px;
+                color: #FFF;
+                font-size: 18px;
+                font-weight: 400;
+                margin-bottom: 64px;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.05);
+                    transition: all 0.3s;
+                    box-shadow: 0 0 10px #888;
+                    animation: myAnim 0.5s ease 0s 1 alternate-reverse both;
+                }
+            }
+
+            &__picture {
+                width: 300px;
+                height: 190px;
+            }
+        }
     }
 }
