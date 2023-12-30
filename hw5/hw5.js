@@ -67,5 +67,17 @@ function exampl(a, b) {
 }
 console.log(exampl(a, b));
 
+//Задание 6
+let number = prompt("Введите число:");
+
+function cubeNumber() {
+    if (isNaN(number)) {
+        return "Переданный параметр не является числом";
+    }
+
+    return `${number} в кубе равняется ${number * number * number}`;
+}
+
+console.log(`${number} в кубе равняется ${number * number * number}`);
 
 
