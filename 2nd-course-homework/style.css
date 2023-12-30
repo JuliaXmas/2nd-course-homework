@@ -165,6 +165,9 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 584px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 }
 @media (min-width: 768px) and (max-width: 833px) {
@@ -218,6 +221,9 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 584px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   .top_seasons__title {
     font-size: 32px;
