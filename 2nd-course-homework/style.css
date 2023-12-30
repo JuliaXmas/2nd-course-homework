@@ -71,18 +71,17 @@ body {
   animation: myAnim 0.5s ease 0s 1 alternate-reverse both;
 }
 .top_seasons {
-  height: 800px;
+  height: 1440px;
   background: #000915;
   color: #FFF;
   display: flex;
-  -moz-column-gap: 135px;
-       column-gap: 135px;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.top_seasons__header {
+.top_seasons__box {
   display: flex;
   flex-direction: column;
   margin-top: 218px;
+  margin-top: 282px;
 }
 .top_seasons__title {
   font-size: 64px;
@@ -115,9 +114,9 @@ body {
 .top_seasons__picture {
   width: 485px;
   height: 333px;
+  margin-top: 234px;
 }
-
-.games {
+.top .games {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -125,23 +124,22 @@ body {
   gap: 32px;
   padding-bottom: 128px;
 }
-
-.game_box {
+.top .game_box {
   position: relative;
   cursor: pointer;
 }
-.game_box:hover {
+.top .game_box:hover {
   transform: scale(1.05);
   transition: all 0.3s;
   box-shadow: 0 0 10px #888;
   box-sizing: border-box;
   border-radius: 17px;
 }
-.game_picture {
+.top .game_picture {
   width: 100%;
   border-radius: 17px;
 }
-.game_text {
+.top .game_text {
   position: absolute;
   bottom: 32px;
   left: 32px;
@@ -149,19 +147,19 @@ body {
   font-weight: 600;
   line-height: 32px;
 }
-
 @media (max-width: 1024px) {
-  .center {
+  .top .center {
     padding-left: calc(50% - 393px);
     padding-right: calc(50% - 393px);
   }
 }
 @media (min-width: 768px) and (max-width: 833px) {
-  .center {
+  .top .center {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -196,55 +194,5 @@ body {
   }
   .top_button {
     margin-bottom: 367px;
-  }
-  .top_seasons {
-    height: 654px;
-    background: #000915;
-    color: #FFF;
-    display: flex;
-    -moz-column-gap: 135px;
-         column-gap: 135px;
-  }
-  .top_seasons__box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .top_seasons__header {
-    display: flex;
-    flex-direction: column;
-    margin-top: 178px;
-  }
-  .top_seasons__title {
-    font-size: 32px;
-    font-weight: 700;
-    padding-bottom: 32px;
-  }
-  .top_seasons__text {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding-bottom: 32px;
-  }
-  .top_seasons__button {
-    border-radius: 30px;
-    background: #9C0332;
-    width: 234px;
-    height: 48px;
-    color: #FFF;
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 64px;
-    cursor: pointer;
-  }
-  .top_seasons__button:hover {
-    transform: scale(1.05);
-    transition: all 0.3s;
-    box-shadow: 0 0 10px #888;
-    animation: myAnim 0.5s ease 0s 1 alternate-reverse both;
-  }
-  .top_seasons__picture {
-    width: 300px;
-    height: 190px;
   }
 }/*# sourceMappingURL=style.css.map */

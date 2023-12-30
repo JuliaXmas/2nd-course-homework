@@ -80,17 +80,17 @@ body {
     }
 
     &_seasons {
-        height: 800px;
+        height: 1440px;
         background: #000915;
         color: #FFF;
         display: flex;
-        column-gap: 135px;
-        flex-wrap: wrap;
+        justify-content: space-between;
 
-        &__header {
+        &__box {
             display: flex;
             flex-direction: column;
             margin-top: 218px;
+            margin-top: 282px;
         }
 
         &__title {
@@ -128,63 +128,63 @@ body {
         &__picture {
             width: 485px;
             height: 333px;
+            margin-top: 234px;
         }
+
     }
 
-}
+    .games {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 32px;
+        padding-bottom: 128px;
+    }
 
-.games {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 32px;
-    padding-bottom: 128px;
-}
+    .game {
+        &_box {
+            position: relative;
+            cursor: pointer;
 
-.game {
-    &_box {
-        position: relative;
-        cursor: pointer;
+            &:hover {
+                transform: scale(1.05);
+                transition: all 0.3s;
+                box-shadow: 0 0 10px #888;
+                box-sizing: border-box;
+                border-radius: 17px;
+            }
+        }
 
-        &:hover {
-            transform: scale(1.05);
-            transition: all 0.3s;
-            box-shadow: 0 0 10px #888;
-            box-sizing: border-box;
+        &_picture {
+            width: 100%;
             border-radius: 17px;
         }
+
+        &_text {
+            position: absolute;
+            bottom: 32px;
+            left: 32px;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 32px;
+        }
     }
 
-    &_picture {
-        width: 100%;
-        border-radius: 17px;
+
+
+    @media (max-width: 1024px) {
+        .center {
+            padding-left: calc(50% - 786px/2);
+            padding-right: calc(50% - 786px/2);
+        }
     }
 
-    &_text {
-        position: absolute;
-        bottom: 32px;
-        left: 32px;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 32px;
-    }
-}
-
-
-
-@media (max-width: 1024px) {
-    .center {
-        padding-left: calc(50% - 786px/2);
-        padding-right: calc(50% - 786px/2);
-    }
-
-}
-
-@media (min-width: 768px) and (max-width: 833px) {
-    .center {
-        padding-left: 24px;
-        padding-right: 24px;
+    @media (min-width: 768px) and (max-width: 833px) {
+        .center {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
     }
 }
 
