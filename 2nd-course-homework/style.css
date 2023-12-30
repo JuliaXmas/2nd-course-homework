@@ -77,6 +77,7 @@ body {
   display: flex;
   -moz-column-gap: 135px;
        column-gap: 135px;
+  margin-top: 282px;
 }
 .top_seasons__box {
   display: flex;
@@ -216,6 +217,7 @@ body {
     background: #000915;
     color: #FFF;
     display: flex;
+    margin-top: 178px;
   }
   .top_seasons__box {
     display: flex;
