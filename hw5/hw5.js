@@ -80,4 +80,31 @@ function cubeNumber() {
 
 console.log(`${number} в кубе равняется ${number * number * number}`);
 
+//Задание 7
+
+function getRectangleArea() {
+    return 3.14 * this.radius * this.radius;
+};
+function getRectanglePerimeter() {
+    return 2 * 3.14 * this.radius;
+};
+
+const circle1 = {
+    radius: 4,
+
+    getArea: getRectangleArea,
+    getPerimeter: getRectanglePerimeter,
+};
+
+const circle2 = {
+    radius: 5,
+
+    getArea: getRectangleArea,
+    getPerimeter: getRectanglePerimeter,
+};
+
+console.log(circle1.getArea());
+console.log(circle1.getPerimeter());
+console.log(circle2.getArea());
+console.log(circle2.getPerimeter());
 
