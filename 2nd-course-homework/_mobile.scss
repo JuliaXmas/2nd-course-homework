@@ -1,0 +1,96 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        height: 735px;
+
+        &_title {
+            color: #FFF;
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        &_text {
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 32px;
+            padding-bottom: 44px;
+            text-align: center;
+
+            &__bold {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 32px;
+            }
+        }
+
+        &_header {
+            display: flex;
+            flex-direction: column;
+            margin-top: 218px;
+            align-items: center;
+        }
+
+        &_button {
+            margin-bottom: 367px;
+        }
+
+        &_seasons {
+            height: 735px;
+            background: #000915;
+            color: #FFF;
+            display: flex;
+            margin-top: 178px;
+
+            &__box {
+                display: flex;
+                flex-direction: column;
+                max-width: 584px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+            &__title {
+                font-size: 32px;
+                font-weight: 700;
+                padding-bottom: 32px;
+            }
+
+            &__text {
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 32px;
+                padding-bottom: 44px;
+            }
+
+            &__button {
+                border-radius: 30px;
+                background: #9C0332;
+                width: 234px;
+                height: 48px;
+                color: #FFF;
+                font-size: 18px;
+                font-weight: 400;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.05);
+                    transition: all 0.3s;
+                    box-shadow: 0 0 10px #888;
+                    animation: myAnim 0.5s ease 0s 1 alternate-reverse both;
+                }
+            }
+
+            &__picture {
+                width: 300px;
+                height: 190px;
+            }
+
+        }
+    }
+}
