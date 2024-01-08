@@ -1,0 +1,154 @@
+@keyframes myAnim {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    transform: scale(1);
+  }
+  100% {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    transform: scale(1.1);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+.top {
+  height: 1024px;
+  background: #000915;
+  background-image: url(./img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #FFF;
+}
+.top_header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 218px;
+}
+.top_title {
+  font-size: 64px;
+  font-weight: 700;
+  padding-bottom: 32px;
+}
+.top_text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  padding-bottom: 44px;
+}
+.top_text__bold {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.top_button {
+  border-radius: 30px;
+  background: #9C0332;
+  width: 234px;
+  height: 48px;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 622px;
+  cursor: pointer;
+}
+.top_button:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
+  box-shadow: 0 0 10px #888;
+  animation: myAnim 0.5s ease 0s 1 alternate-reverse both;
+}
+
+.games {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding-bottom: 128px;
+}
+
+.game_box {
+  position: relative;
+  cursor: pointer;
+}
+.game_box:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
+  box-shadow: 0 0 10px #888;
+  box-sizing: border-box;
+  border-radius: 17px;
+}
+.game_picture {
+  width: 100%;
+  border-radius: 17px;
+}
+.game_text {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+}
+@media (min-width: 768px) and (max-width: 833px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    height: 735px;
+  }
+  .top_title {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .top_text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 32px;
+    padding-bottom: 44px;
+    text-align: center;
+  }
+  .top_text__bold {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  .top_header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 218px;
+    align-items: center;
+  }
+  .top_button {
+    margin-bottom: 367px;
+  }
+}/*# sourceMappingURL=style.css.map */
