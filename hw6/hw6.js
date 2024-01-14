@@ -79,3 +79,11 @@ function doubleNumbers(value) {
 }
 
 console.log(doubleNumbers(value));
+
+//Задание 12
+function arrSum(num) {
+    for (let i = 0; i < num.length; i++) {
+        console.log(num[i].length);
+    }
+}
+arrSum(['слово', '', 'слог', 'длинное предложение', 'буква']);
