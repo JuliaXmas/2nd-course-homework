@@ -63,3 +63,12 @@ let arr9 = [
 
 const flat = arr9.flat();
 console.log(flat);
+
+//Задание 10
+let arr10 = [3, 7, 4, 9, 1, 10, 6, 2, 8, 5];
+
+for (let i = 0; i < arr10.length - 1; i++) {
+
+    console.log(arr10[i] + arr10[i + 1]);
+}
+
