@@ -87,3 +87,17 @@ function arrSum(num) {
     }
 }
 arrSum(['слово', '', 'слог', 'длинное предложение', 'буква']);
+
+//Задание 13
+function filterPositive(array) {
+    const negative = [];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] < 0) {
+            negative.push(array[i])
+        }
+    }
+    return negative
+}
+
+console.log(filterPositive([-1, 0, 5, -10, 56]));
+console.log(filterPositive([-25, 25, 0, -1000, -2]));
