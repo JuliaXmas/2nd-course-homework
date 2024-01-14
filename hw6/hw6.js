@@ -33,3 +33,10 @@ console.log(table);
 let arr5 = [1, 1, 1];
 arr5.push(2, 2, 2);
 console.log(arr5);
+
+//Задание 6
+let arr6 = [9, 8, 7, 'a', 6, 5];
+arr6 = arr6.sort();
+console.log(arr6);
+console.log(arr6.pop());
+console.log(arr6);
