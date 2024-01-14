@@ -72,3 +72,10 @@ for (let i = 0; i < arr10.length - 1; i++) {
     console.log(arr10[i] + arr10[i + 1]);
 }
 
+//Задание 11
+const value = [1, 2, 3];
+function doubleNumbers(value) {
+    return value.map(x => x * 2);
+}
+
+console.log(doubleNumbers(value));
