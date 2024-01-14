@@ -54,3 +54,12 @@ let reverse = a => a.split('')
     .join('');
 
 console.log(reverse('abcdef'))
+
+//Задание 9
+let arr9 = [
+    [1, 2, 3,],
+    [4, 5, 6]
+];
+
+const flat = arr9.flat();
+console.log(flat);
