@@ -40,3 +40,10 @@ arr6 = arr6.sort();
 console.log(arr6);
 console.log(arr6.pop());
 console.log(arr6);
+
+//Задание 7
+let arr7 = [9, 8, 7, 6, 5];
+let userAnswer = prompt('Угадайте число');
+let search = arr7.includes(Number(userAnswer));
+console.log(search);
+
