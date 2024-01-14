@@ -6,3 +6,8 @@ for (let i = 0; i < arr.length; i++) {
         break;
     }
 }
+
+//Задание 2
+const numbs = [1, 5, 4, 10, 0, 3];
+
+console.log(numbs.indexOf(4))
