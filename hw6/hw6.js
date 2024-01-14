@@ -28,3 +28,8 @@ for (let i = 0; i < 3; i++) {
 };
 
 console.log(table);
+
+//Задание 5
+let arr5 = [1, 1, 1];
+arr5.push(2, 2, 2);
+console.log(arr5);
