@@ -75,3 +75,48 @@ let currentDate = new Date();
 currentDate.setDate(currentDate.getDate() + 73);
 
 console.log(currentDate);
+
+
+//Задание 10
+const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+    "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+
+const ten = (curDate) => {
+    let date = curDate.getDate();
+    if (date < 10) {
+        date = "0" + date;
+    }
+
+    let month = months[curDate.getMonth() - 1];
+    if (month < 10) {
+        month = "0" + month;
+    }
+
+    let day = days[curDate.getDay()];
+    if (day < 10) {
+        day = "0" + day;
+    }
+
+    let hours = curDate.getHours();
+    if (hours < 10) {
+        hours = "0" + hours;
+    }
+
+    let minute = curDate.getMinutes();
+    if (minute < 10) {
+        minute = "0" + minute;
+    }
+
+    let second = curDate.getSeconds();
+    if (second < 10) {
+        second = "0" + second;
+    }
+
+    console.log(`Дата: ${date}.${month}.${curDate.getFullYear()} - это ${day}.`);
+    console.log(`Время: ${hours}:${minute}:${second}`);
+};
+
+ten(new Date(prompt(`Введите год`), prompt(`Введите номер месяца`), prompt(`Введите день месяца`), prompt(`Введите час`), prompt(`Введите минуты`), prompt(`Введите секунды`)));
+
+//Почему среда, когда понедельник?😢
