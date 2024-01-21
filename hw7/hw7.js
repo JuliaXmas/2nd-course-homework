@@ -5,10 +5,10 @@ console.log(str);
 
 
 //Задание 2 
-const arr = ['Бабочка', 'Пекарь', 'Бабушка', 'Бушака', 'Барин', 'Боярин', 'Князь']
+const array = ['Бабочка', 'Пекарь', 'Бабушка', 'Бушака', 'Барин', 'Боярин', 'Князь']
 const string = 'ба';
 const arrString = [];
-arr.forEach((person) => {
+array.forEach((person) => {
     if (person.toLowerCase().startsWith(string)) {
         arrString.push(person)
     }
@@ -41,5 +41,15 @@ console.log(getRandomInt(0, 10));
 
 
 //Задание 6
-let random = Math.floor(Math.random() * 10) + 1;
-console.log(random); 
+function getRandomNum(maxValue) {
+    const getRandom = [];
+    for (let i = 0; i < Math.floor(maxValue / 2); i++) {
+        getRandom[i] = Math.floor(Math.random() * maxValue);
+    }
+    return getRandom;
+}
+
+console.log(getRandomNum(7));
+console.log(getRandomNum(12));
+
+//Задание 7
