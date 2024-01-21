@@ -21,10 +21,14 @@ function words() {
     alert(arrWord)
 
     let inputWordFirst = prompt('Напишите первое слово');
+    inputWordFirst = inputWordFirst.toLowerCase
     let inputWordLast = prompt(`Напишите последнее слово`);
+    inputWordLast = inputWordLast.toLowerCase
 
     if (inputWordFirst === arrWord[0] && inputWordLast === arrWord[6]) {
         return alert('Верно!');
+    } else if (inputWordFirst === arrWord[0] || inputWordLast === arrWord[6]) {
+        return alert('Вы были близки к победе!');
     } else {
         return alert('Неверно!');
     }

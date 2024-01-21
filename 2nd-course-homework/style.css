@@ -71,7 +71,7 @@ body {
   animation: myAnim 0.5s ease 0s 1 alternate-reverse both;
 }
 .top_seasons {
-  height: 1440px;
+  height: 800px;
   background: #000915;
   color: #FFF;
   display: flex;
@@ -116,13 +116,13 @@ body {
   height: 333px;
 }
 .top_words {
-  height: 1440px;
+  height: 800px;
   background: #000915;
   color: #FFF;
   display: flex;
   -moz-column-gap: 135px;
-       column-gap: 135px;
-  margin-top: 282px;
+  column-gap: 135px;
+  align-items: center;
 }
 .top_words__box {
   display: flex;
@@ -159,6 +159,7 @@ body {
 .top_words__picture {
   width: 485px;
   height: 333px;
+  align-self: center;
 }
 
 .games {
@@ -215,6 +216,28 @@ body {
     justify-content: center;
     text-align: center;
   }
+  .top_words {
+    height: 800px;
+    background: #000915;
+    color: #FFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+  .top_words__box {
+    display: flex;
+    flex-direction: column;
+    max-width: 584px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .top_words__picture {
+    margin-top: 64px;
+    align-self: center;
+  }
 }
 @media (min-width: 768px) and (max-width: 833px) {
   .center {
@@ -258,7 +281,7 @@ body {
     margin-bottom: 367px;
   }
   .top_seasons {
-    height: 735px;
+    height: 650px;
     background: #000915;
     color: #FFF;
     display: flex;
@@ -300,6 +323,54 @@ body {
     animation: myAnim 0.5s ease 0s 1 alternate-reverse both;
   }
   .top_seasons__picture {
+    width: 300px;
+    height: 190px;
+  }
+  .top_words {
+    height: 650px;
+    background: #000915;
+    color: #FFF;
+    display: flex;
+    margin-top: 178px;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .top_words__box {
+    display: flex;
+    flex-direction: column;
+    max-width: 584px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .top_words__title {
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 32px;
+  }
+  .top_words__text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 32px;
+    padding-bottom: 44px;
+  }
+  .top_words__button {
+    border-radius: 30px;
+    background: #9C0332;
+    width: 234px;
+    height: 48px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  .top_words__button:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+    box-shadow: 0 0 10px #888;
+    animation: myAnim 0.5s ease 0s 1 alternate-reverse both;
+  }
+  .top_words__picture {
     width: 300px;
     height: 190px;
   }
