@@ -63,3 +63,15 @@ function randomInt(min, max) {
 
 }
 alert(randomInt());
+
+
+//Задание 8
+let presentDate = new Date();
+console.log(presentDate);
+
+
+//Задание 9
+let currentDate = new Date();
+currentDate.setDate(currentDate.getDate() + 73);
+
+console.log(currentDate);
