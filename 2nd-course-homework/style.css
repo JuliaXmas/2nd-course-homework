@@ -115,6 +115,51 @@ body {
   width: 485px;
   height: 333px;
 }
+.top_words {
+  height: 1440px;
+  background: #000915;
+  color: #FFF;
+  display: flex;
+  -moz-column-gap: 135px;
+       column-gap: 135px;
+  margin-top: 282px;
+}
+.top_words__box {
+  display: flex;
+  flex-direction: column;
+  max-width: 584px;
+}
+.top_words__title {
+  font-size: 64px;
+  font-weight: 700;
+  padding-bottom: 32px;
+}
+.top_words__text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  padding-bottom: 44px;
+}
+.top_words__button {
+  border-radius: 30px;
+  background: #9C0332;
+  width: 234px;
+  height: 48px;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.top_words__button:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
+  box-shadow: 0 0 10px #888;
+  animation: myAnim 0.5s ease 0s 1 alternate-reverse both;
+}
+.top_words__picture {
+  width: 485px;
+  height: 333px;
+}
 
 .games {
   display: flex;
