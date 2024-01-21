@@ -38,3 +38,8 @@ function getRandomInt(minValue, maxValue) {
     return Math.random() * maxValue
 }
 console.log(getRandomInt(0, 10));
+
+
+//Задание 6
+let random = Math.floor(Math.random() * 10) + 1;
+console.log(random); 
