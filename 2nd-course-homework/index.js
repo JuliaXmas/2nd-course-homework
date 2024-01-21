@@ -15,3 +15,18 @@ function date() {
 }
 
 
+function words() {
+    let arrWord = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    arrWord = arrWord.sort(() => Math.random() - 0.5);
+    alert(arrWord)
+
+    let inputWordFirst = prompt('Напишите первое слово');
+    let inputWordLast = prompt(`Напишите последнее слово`);
+
+    if (inputWordFirst === arrWord[0] && inputWordLast === arrWord[6]) {
+        return alert('Верно!');
+    } else {
+        return alert('Неверно!');
+    }
+}
+
