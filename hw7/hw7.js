@@ -30,3 +30,11 @@ const max = Math.max(...numbers);
 
 console.log(`Наименьшее число: ${min}`);
 console.log(`Наибольшее число: ${max}`);
+
+
+//Задание 5
+function getRandomInt(minValue, maxValue) {
+
+    return Math.random() * maxValue
+}
+console.log(getRandomInt(0, 10));
