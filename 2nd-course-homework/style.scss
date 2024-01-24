@@ -80,7 +80,7 @@ body {
     }
 
     &_seasons {
-        height: 1440px;
+        height: 800px;
         background: #000915;
         color: #FFF;
         display: flex;
@@ -127,6 +127,60 @@ body {
         &__picture {
             width: 485px;
             height: 333px;
+        }
+
+    }
+
+    &_words {
+        height: 800px;
+        background: #000915;
+        color: #FFF;
+        display: flex;
+        -moz-column-gap: 135px;
+        column-gap: 135px;
+        align-items: center;
+
+        &__box {
+            display: flex;
+            flex-direction: column;
+            max-width: 584px;
+        }
+
+        &__title {
+            font-size: 64px;
+            font-weight: 700;
+            padding-bottom: 32px;
+        }
+
+        &__text {
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 32px;
+            padding-bottom: 44px;
+        }
+
+        &__button {
+            border-radius: 30px;
+            background: #9C0332;
+            width: 234px;
+            height: 48px;
+            color: #FFF;
+            font-size: 18px;
+            font-weight: 400;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.05);
+                transition: all 0.3s;
+                box-shadow: 0 0 10px #888;
+                animation: myAnim 0.5s ease 0s 1 alternate-reverse both;
+            }
+        }
+
+        &__picture {
+            width: 485px;
+            height: 333px;
+            align-self: center;
         }
 
     }
@@ -196,6 +250,31 @@ body {
                 text-align: center;
             }
         }
+
+        &_words {
+            height: 800px;
+            background: #000915;
+            color: #FFF;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: column-reverse;
+            align-content: center;
+
+            &__box {
+                display: flex;
+                flex-direction: column;
+                max-width: 584px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+            &__picture {
+                margin-top: 64px;
+                align-self: center;
+            }
+        }
     }
 }
 
@@ -204,7 +283,7 @@ body {
         padding-left: 24px;
         padding-right: 24px;
     }
-}
 
+}
 
 @import 'mobile';
