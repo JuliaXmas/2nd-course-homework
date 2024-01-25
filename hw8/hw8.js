@@ -50,3 +50,20 @@ const people2 = [
 ];
 
 console.log(filter(people2, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
+
+//Задание 3
+let currentDate = new Date();
+console.log(currentDate);
+
+const timer = (currentDate) => {
+    let timerId = setInterval(() => {
+        console.log(new Date);
+    }, 3000);
+
+    setTimeout(() => {
+        clearInterval(timerId)
+        console.log("30 секунд прошло")
+    }, 30000)
+};
+
+timer(currentDate);
