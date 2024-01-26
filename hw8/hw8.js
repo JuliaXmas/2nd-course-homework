@@ -53,11 +53,10 @@ console.log(filter(people2, isMale)); // Должен выводить [{name: '
 
 //Задание 3
 let currentDate = new Date();
-console.log(currentDate);
 
-const timer = (currentDate) => {
+const timer = () => {
     let timerId = setInterval(() => {
-        console.log(new Date);
+        console.log(new Date());
     }, 3000);
 
     setTimeout(() => {
