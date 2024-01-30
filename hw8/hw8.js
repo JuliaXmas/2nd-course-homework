@@ -24,16 +24,16 @@ function isPositive(num) {
     }
 }
 
-function isMale(item) {
-    if (item.gender === 'male') {
-        return item;
+function isMale(person) {
+    if (person.gender === 'male') {
+        return person;
     }
 }
 function filter(array, ruleFunction) {
     let newArray = [];
-    for (let i = 0; i < array.length; i++) {
-        if (ruleFunction(array[i])) {
-            newArray.push(array[i]);
+    for (let item of array) {
+        if (ruleFunction(item)) {
+            newArray.push(item);
         }
     }
 
