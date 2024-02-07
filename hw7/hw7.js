@@ -113,7 +113,7 @@ const ten = (curDate) => {
         second = "0" + second;
     }
 
-    console.log(`Дата: ${date}.${month}.${curDate.getFullYear()} - это ${day}.`);
+    console.log(`Дата: ${date}.${month}.${curDate.getFullYear()} - это ${day[date.getDay()]}.`);
     console.log(`Время: ${hours}:${minute}:${second}`);
 };
 
